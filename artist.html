@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Adding css, google fonts, font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sofia&family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Title of Web Page -->
+    <title>Artist Page</title>
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="container">
+      <!-- Top Header -->
+      <header id="top_bar">
+        <div class="brand">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./assests/logo/orange_player.png" alt="logo" />
+            </a>
+          </div>
+          <div class="logo_title">
+            <a href="./index.html"><h3>Orange Player</h3></a>
+          </div>
+        </div>
+        <div class="navigation">
+          <nav>
+            <a href="#favourites">Favourites</a>
+            <a href="#library">Library</a>
+          </nav>
+        </div>
+        <input id="tick" type="checkbox" />
+        <label id="tick_label" for="tick"><i class="fa fa-bars"></i></label>
+        <div class="actions">
+          <div class="action search_bar">
+            <input type="text" placeholder="Search a Song" />
+            <div class="mic">
+              <i id="search_icon" class="fa fa-search"></i>
+            </div>
+          </div>
+          <div class="action bell_icon">
+            <div class="bell"><i class="fa fa-bell"></i></div>
+            <div class="circle"><i class="fa fa-circle"></i></div>
+          </div>
+          <div class="action my_profile">
+            <a href=""><img src="assests/me.jpg" alt="My Profile" /></a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <div id="main_content">
+        <div class="content">
+          <div class="artist-info">
+            <div class="cover">
+              <img src="./assests/english_artist/selena_gomez.jpg" alt="" />
+            </div>
+            <div class="info">
+              <div class="title">
+                <div>Selena Gomez</div>
+                <div>1M Followers</div>
+              </div>
+              <div class="singer_type">American Singer</div>
+              <br />
+              <div class="singer_description">
+                Selena Marie Gomez is an American singer, actress, producer and
+                businesswoman. Gomez began her acting career on the children's
+                television series Barney & Friends. As a teenager, she rose to
+                prominence for starring as Alex Russo on the Disney Channel
+                television series Wizards of Waverly Place.
+              </div>
+              <br />
+              <div class="actions">
+                <button>Play All</button>
+                <button>Follow</button>
+              </div>
+              <div class="more">247 Tracks | 148 Albums</div>
+            </div>
+          </div>
+
+          <div class="next_songs">
+            <div class="queue_card">
+              <div class="number">01</div>
+              <div class="cover">
+                <a href="#"
+                  ><img
+                    src="./assests/english_pop_covers/infinity.jpg"
+                    alt="infinity"
+                /></a>
+              </div>
+              <div class="info">
+                <div class="title">Infinity</div>
+                <div class="singer">Jaymes Young</div>
+              </div>
+              <div class="action"><i class="fa fa-heart"></i></div>
+            </div>
+
+            <div class="queue_card">
+              <div class="number">02</div>
+              <div class="cover">
+                <a href="#"
+                  ><img
+                    src="./assests/english_pop_covers/bones.jpg"
+                    alt="bones"
+                /></a>
+              </div>
+              <div class="info">
+                <div class="title">Bones</div>
+                <div class="singer">Imagine Dragons</div>
+              </div>
+              <div class="action"><i class="fa fa-heart"></i></div>
+            </div>
+
+            <div class="queue_card">
+              <div class="number">03</div>
+              <div class="cover">
+                <a href="#"
+                  ><img
+                    src="./assests/english_pop_covers/harley_in_hawaii.jpg"
+                    alt="harley_in_hawaii"
+                /></a>
+              </div>
+              <div class="info">
+                <div class="title">Harley In Hawaii</div>
+                <div class="singer">Katy Pery</div>
+              </div>
+              <div class="action"><i class="fa fa-heart"></i></div>
+            </div>
+
+            <div class="queue_card">
+              <div class="number">04</div>
+              <div class="cover">
+                <a href="#"
+                  ><img
+                    src="./assests/english_pop_covers/industry_baby.jpg"
+                    alt="industry_baby"
+                /></a>
+              </div>
+              <div class="info">
+                <div class="title">Industry Baby</div>
+                <div class="singer">Lil Nas X</div>
+              </div>
+              <div class="action"><i class="fa fa-heart"></i></div>
+            </div>
+
+            <div class="queue_card">
+              <div class="number">05</div>
+              <div class="cover">
+                <a href="#"
+                  ><img
+                    src="./assests/english_pop_covers/levitating.jpg"
+                    alt="levitating"
+                /></a>
+              </div>
+              <div class="info">
+                <div class="title">Levitating</div>
+                <div class="singer">Dua Lipa</div>
+              </div>
+              <div class="action"><i class="fa fa-heart"></i></div>
+            </div>
+
+            <div class="queue_card">
+              <div class="number">06</div>
+              <div class="cover">
+                <a href="#"
+                  ><img
+                    src="./assests/english_pop_covers/unstoppable.jpg"
+                    alt="unstoppable"
+                /></a>
+              </div>
+              <div class="info">
+                <div class="title">Unstoppable</div>
+                <div class="singer">The Score</div>
+              </div>
+              <div class="action"><i class="fa fa-heart"></i></div>
+            </div>
+
+            <div class="queue_card">
+              <div class="number">07</div>
+              <div class="cover">
+                <a href="#"
+                  ><img
+                    src="./assests/hindi_covers/mann_mera.jpg"
+                    alt="mann_mera"
+                /></a>
+              </div>
+              <div class="info">
+                <div class="title">Mann Mera</div>
+                <div class="singer">Gajendra Verma</div>
+              </div>
+              <div class="action"><i class="fa fa-heart"></i></div>
+            </div>
+
+            <div class="queue_card">
+              <div class="number">08</div>
+              <div class="cover">
+                <a href="#"
+                  ><img
+                    src="./assests/hindi_covers/toota_jo_kabhi_tara.jpg"
+                    alt="toota_jo_kabhi_tara"
+                /></a>
+              </div>
+              <div class="info">
+                <div class="title">Toota Jo Kabhi Tara</div>
+                <div class="singer">Atif Aslam & Sumedha Karmahe</div>
+              </div>
+              <div class="action"><i class="fa fa-heart"></i></div>
+            </div>
+
+            <div class="queue_card">
+              <div class="number">09</div>
+              <div class="cover">
+                <a href="#"
+                  ><img
+                    src="./assests/hindi_covers/tum_mere_ho.jpg"
+                    alt="tum_mere_ho"
+                /></a>
+              </div>
+              <div class="info">
+                <div class="title">Tum Mere Ho</div>
+                <div class="singer">Jubin Nautiyal & Amrita Singh</div>
+              </div>
+              <div class="action"><i class="fa fa-heart"></i></div>
+            </div>
+
+            <div class="queue_card">
+              <div class="number">10</div>
+              <div class="cover">
+                <a href="#"
+                  ><img
+                    src="./assests/english_pop_covers/old_town_road.jpg"
+                    alt="old_town_road"
+                /></a>
+              </div>
+              <div class="info">
+                <div class="title">Old Town Road</div>
+                <div class="singer">Lil Nas X</div>
+              </div>
+              <div class="action"><i class="fa fa-heart"></i></div>
+            </div>
+
+            <div class="queue_card">
+              <div class="number">11</div>
+              <div class="cover">
+                <a href="#"
+                  ><img
+                    src="./assests/english_pop_covers/under_the_influence.jpg"
+                    alt="under_the_influence"
+                /></a>
+              </div>
+              <div class="info">
+                <div class="title">Under The Influence</div>
+                <div class="singer">Chris Brown</div>
+              </div>
+              <div class="action"><i class="fa fa-heart"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar/Queue -->
+        <aside>
+          <div class="sidebar">
+            <div class="queue">
+              <div class="title">Queue</div>
+              <div class="action">
+                <i class="fa fa-caret-down"></i>
+                <div class="queue-controls">
+                  <div class="queue-controls-item">
+                    <div class="icon"><i class="fa fa-list"></i></div>
+                    <div class="title"><a href="#">Playlists</a></div>
+                  </div>
+                  <div class="queue-controls-item">
+                    <div class="icon"><i class="fa fa-heart"></i></div>
+                    <div class="title"><a href="#">Favourites</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="next_songs">
+              <div class="queue_card">
+                <div class="number">01</div>
+                <div class="cover">
+                  <a href="#"
+                    ><img
+                      src="./assests/english_pop_covers/infinity.jpg"
+                      alt="infinity"
+                  /></a>
+                  <div class="queue_overlay">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">Infinity</div>
+                  <div class="singer">Jaymes Young</div>
+                </div>
+                <div class="action"><i class="fa fa-heart"></i></div>
+              </div>
+
+              <div class="queue_card">
+                <div class="number">02</div>
+                <div class="cover">
+                  <a href="#"
+                    ><img
+                      src="./assests/english_pop_covers/bones.jpg"
+                      alt="bones"
+                  /></a>
+                  <div class="queue_overlay">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">Bones</div>
+                  <div class="singer">Imagine Dragons</div>
+                </div>
+                <div class="action"><i class="fa fa-heart"></i></div>
+              </div>
+
+              <div class="queue_card">
+                <div class="number">03</div>
+                <div class="cover">
+                  <a href="#"
+                    ><img
+                      src="./assests/english_pop_covers/harley_in_hawaii.jpg"
+                      alt="harley_in_hawaii"
+                  /></a>
+                  <div class="queue_overlay">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">Harley In Hawaii</div>
+                  <div class="singer">Katy Pery</div>
+                </div>
+                <div class="action"><i class="fa fa-heart"></i></div>
+              </div>
+
+              <div class="queue_card">
+                <div class="number">04</div>
+                <div class="cover">
+                  <a href="#"
+                    ><img
+                      src="./assests/english_pop_covers/industry_baby.jpg"
+                      alt="industry_baby"
+                  /></a>
+                  <div class="queue_overlay">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">Industry Baby</div>
+                  <div class="singer">Lil Nas X</div>
+                </div>
+                <div class="action"><i class="fa fa-heart"></i></div>
+              </div>
+
+              <div class="queue_card">
+                <div class="number">05</div>
+                <div class="cover">
+                  <a href="#"
+                    ><img
+                      src="./assests/english_pop_covers/levitating.jpg"
+                      alt="levitating"
+                  /></a>
+                  <div class="queue_overlay">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">Levitating</div>
+                  <div class="singer">Dua Lipa</div>
+                </div>
+                <div class="action"><i class="fa fa-heart"></i></div>
+              </div>
+
+              <div class="queue_card">
+                <div class="number">06</div>
+                <div class="cover">
+                  <a href="#"
+                    ><img
+                      src="./assests/english_pop_covers/unstoppable.jpg"
+                      alt="unstoppable"
+                  /></a>
+                  <div class="queue_overlay">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">Unstoppable</div>
+                  <div class="singer">The Score</div>
+                </div>
+                <div class="action"><i class="fa fa-heart"></i></div>
+              </div>
+
+              <div class="queue_card">
+                <div class="number">07</div>
+                <div class="cover">
+                  <a href="#"
+                    ><img
+                      src="./assests/hindi_covers/mann_mera.jpg"
+                      alt="mann_mera"
+                  /></a>
+                  <div class="queue_overlay">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">Mann Mera</div>
+                  <div class="singer">Gajendra Verma</div>
+                </div>
+                <div class="action"><i class="fa fa-heart"></i></div>
+              </div>
+
+              <div class="queue_card">
+                <div class="number">08</div>
+                <div class="cover">
+                  <a href="#"
+                    ><img
+                      src="./assests/hindi_covers/toota_jo_kabhi_tara.jpg"
+                      alt="toota_jo_kabhi_tara"
+                  /></a>
+                  <div class="queue_overlay">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">Toota Jo Kabhi Tara</div>
+                  <div class="singer">Atif Aslam & Sumedha Karmahe</div>
+                </div>
+                <div class="action"><i class="fa fa-heart"></i></div>
+              </div>
+
+              <div class="queue_card">
+                <div class="number">09</div>
+                <div class="cover">
+                  <a href="#"
+                    ><img
+                      src="./assests/hindi_covers/tum_mere_ho.jpg"
+                      alt="tum_mere_ho"
+                  /></a>
+                  <div class="queue_overlay">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">Tum Mere Ho</div>
+                  <div class="singer">Jubin Nautiyal & Amrita Singh</div>
+                </div>
+                <div class="action"><i class="fa fa-heart"></i></div>
+              </div>
+
+              <div class="queue_card">
+                <div class="number">10</div>
+                <div class="cover">
+                  <a href="#"
+                    ><img
+                      src="./assests/english_pop_covers/old_town_road.jpg"
+                      alt="old_town_road"
+                  /></a>
+                  <div class="queue_overlay">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">Old Town Road</div>
+                  <div class="singer">Lil Nas X</div>
+                </div>
+                <div class="action"><i class="fa fa-heart"></i></div>
+              </div>
+
+              <div class="queue_card">
+                <div class="number">11</div>
+                <div class="cover">
+                  <a href="#"
+                    ><img
+                      src="./assests/english_pop_covers/under_the_influence.jpg"
+                      alt="under_the_influence"
+                  /></a>
+                  <div class="queue_overlay">
+                    <a href="#"><i class="fa fa-play"></i></a>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="title">Under The Influence</div>
+                  <div class="singer">Chris Brown</div>
+                </div>
+                <div class="action"><i class="fa fa-heart"></i></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Footer -->
+      <footer id="bottom_bar">
+        CopyRight Orange Player 2023-2024. All Rights Reserved.
+      </footer>
+    </div>
+
+    <!-- Bottom Music Player -->
+    <div class="music_player">
+      <div class="info">
+        <div class="cover">
+          <img
+            src="./assests/english_artist/taylor_swift.jpg"
+            alt="taylor_swift"
+          />
+        </div>
+        <div class="about">
+          <div class="song">Blank Space</div>
+          <div class="singer">Taylor Swift</div>
+        </div>
+        <div class="song_action"><i class="fa fa-thumbs-up"></i></div>
+      </div>
+
+      <div class="action">
+        <div class="music_nav">
+          <div class="backward"><i class="fa fa-backward"></i></div>
+          <div class="pause"><i id="pause" class="fa fa-play"></i></div>
+          <div class="forward"><i class="fa fa-forward"></i></div>
+        </div>
+        <audio id="media">
+          <source id="audio_source" src="" type="audio/mpeg" />
+        </audio>
+        <div class="seekbar">
+          <input id="progress" type="range" value="0" />
+        </div>
+      </div>
+
+      <div class="adjust">
+        <div class="volume_logo"><i class="fa fa-volume-up"></i></div>
+        <div class="volume_slider">
+          <input id="volume" type="range" value="50" />
+        </div>
+      </div>
+
+      <div class="cancel"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
